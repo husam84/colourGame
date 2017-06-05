@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    background-color: #232323;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* clearfix
+   ========================================================================== */
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1,h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+span#rgb {
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 2em;
+    color: tomato;
+	display: block;
+	margin: 0.3em 0;
+}
+
+.header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+.mode {
+    background-color: white;
+    color: steelblue;
+    height: 100%;
+	font-size: 95%;
+}
+.colour {
+    width: 40%;
+	background: white;
+    float: left;
+    margin: 4% 30% ;
+	padding-bottom: 10%;  
+    border-radius: 50%;
+    background-color: coral;    
+}
+.colour:hover {
+    border-radius: 30%;
+    transition: border-radius 0.3s;
+}
+/* buttons
+   ========================================================================== */
+button {
+    background-color: steelblue;
+    color: white;
+    border: none;
+	padding: 0.5em .1em;
+}
+
+#easy, #medium, #hard {
+	float: right;
+	margin: 0 0.1em;	
+}
+
+#easy {
+    background-color: green;
+}
+
+#medium {
+    background-color: orange;    
+}
+#hard {
+    background-color: red;
+}
+
+#easy:hover {
+    background-color: darkgreen;
+}
+
+#medium:hover {
+    background-color: darkorange;
+}
+
+#hard:hover {
+    background-color: darkred;
+}
+
+#reset:hover {
+    background-color: darkblue;
+}
+
+#message {
+	margin-left: 0.1em;
+    color: black;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+    transition: display 0.3s;
+}
+
+/* Media queries
+   ========================================================================== */
+@media screen and (min-width: 480px) {
+	body {
+		font-size: 1em;
+	}
+  	  
+	span#rgb {
+		font-size: 2.5em;   
+	}
+	
+	.colour {
+	  width: 20%;
+	  margin: 5% 6.66%;
+	}
+  
+	#easy, #medium, #hard {
+		margin: 0 1em;
+	
+	}
+
+	button {
+		padding: 0.5em;
+	}
+
+	.mode {
+		font-size: 100%;
+	}
+	
+	#message {
+		margin-left: 1em;
+	}
+   
+}
+
+@media screen and (min-width: 750px) {
+	body {
+		font-size: 1.2em;	
+	}
+  
+	.colour {
+		width: 20%;
+		margin: 0.8% 6.66%;
+	}
+  
+	.container {
+		width: 80%;
+		margin: 0 auto; 
+	}
+ 
+} 
